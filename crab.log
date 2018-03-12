@@ -1,0 +1,239 @@
+DEBUG 2017-01-23 17:49:24,658: 	 Executing command: 'status'
+DEBUG 2017-01-23 17:49:24,659: 	 Found CRAB cache file /uscms/home/ksiehl/.crab3
+DEBUG 2017-01-23 17:49:24,671: 	 Checking credentials
+DEBUG 2017-01-23 17:49:24,671: 	 Proxy file /tmp/x509up_u45737 not found
+DEBUG 2017-01-23 17:49:24,671: 	 Creating new proxy for 24:00 hours with VO group '' and VO role 'NULL'.
+DEBUG 2017-01-23 17:49:38,190: 	 Executing : 
+ command : voms-proxy-init -voms cms:/cms -valid 24:00 -rfc
+ output : None
+ error: None
+ retcode : 3
+DEBUG 2017-01-23 17:49:38,293: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u45737 -timeleft
+ output : 
+ error: 
+Couldn't find a valid proxy.
+
+
+ retcode : 1
+ERROR 2017-01-23 17:49:38,293: 	 Error while checking proxy timeleft for /tmp/x509up_u45737
+DEBUG 2017-01-23 17:49:38,395: 	 Executing : 
+ command : env X509_USER_PROXY=/tmp/x509up_u45737 voms-proxy-info -fqan
+ output : 
+ error: 
+Couldn't find a valid proxy.
+
+
+ retcode : 1
+ERROR 2017-01-23 17:49:38,395: 	 Problems creating proxy.
+ERROR 2017-01-23 17:49:38,395: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1611-comp3/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1611-comp3/bin/crab", line 146, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1611-comp3/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 292, in __init__
+    self.proxyCreated = self.proxy.createNewVomsProxySimple(timeLeftThreshold = 720)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1611-comp3/lib/python2.7/site-packages/CRABClient/CredentialInteractions.py", line 152, in createNewVomsProxySimple
+    raise ProxyCreationException("Problems creating proxy.")
+ProxyCreationException: Problems creating proxy.
+DEBUG 2017-08-09 14:20:48,002: 	 Executing command: 'submit'
+DEBUG 2017-08-09 14:20:48,002: 	 Found CRAB cache file /uscms/home/ksiehl/.crab3
+DEBUG 2017-08-09 14:20:48,018: 	 Checking credentials
+DEBUG 2017-08-09 14:20:48,019: 	 Proxy file /tmp/x509up_u45737 not found
+DEBUG 2017-08-09 14:20:48,019: 	 Creating new proxy for 24:00 hours with VO group '' and VO role 'NULL'.
+ERROR 2017-08-09 14:20:50,467: 	 Keyboard Interrupted
+DEBUG 2017-09-01 10:14:13,443: 	 Executing command: 'status'
+DEBUG 2017-09-01 10:14:13,453: 	 Found CRAB cache file /uscms/home/ksiehl/.crab3
+DEBUG 2017-09-01 10:14:13,480: 	 Checking credentials
+DEBUG 2017-09-01 10:14:13,480: 	 Proxy file /tmp/x509up_u45737 not found
+DEBUG 2017-09-01 10:14:13,480: 	 Creating new proxy for 24:00 hours with VO group '' and VO role 'NULL'.
+DEBUG 2017-09-01 10:14:42,629: 	 Executing : 
+ command : voms-proxy-init -voms cms:/cms -valid 24:00 -rfc
+ output : None
+ error: None
+ retcode : 3
+DEBUG 2017-09-01 10:14:42,735: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u45737 -timeleft
+ output : 
+ error: 
+Couldn't find a valid proxy.
+
+
+ retcode : 1
+ERROR 2017-09-01 10:14:42,735: 	 Error while checking proxy timeleft for /tmp/x509up_u45737
+DEBUG 2017-09-01 10:14:42,837: 	 Executing : 
+ command : env X509_USER_PROXY=/tmp/x509up_u45737 voms-proxy-info -fqan
+ output : 
+ error: 
+Couldn't find a valid proxy.
+
+
+ retcode : 1
+ERROR 2017-09-01 10:14:42,838: 	 Problems creating proxy.
+ERROR 2017-09-01 10:14:42,838: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1707.patch1/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1707.patch1/bin/crab", line 146, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1707.patch1/lib/python2.7/site-packages/CRABClient/Commands/status.py", line 38, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1707.patch1/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 292, in __init__
+    self.proxyCreated = self.proxy.createNewVomsProxySimple(timeLeftThreshold = 720)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1707.patch1/lib/python2.7/site-packages/CRABClient/CredentialInteractions.py", line 152, in createNewVomsProxySimple
+    raise ProxyCreationException("Problems creating proxy.")
+ProxyCreationException: Problems creating proxy.
+DEBUG 2017-09-01 11:58:16,983: 	 Executing command: 'kill'
+DEBUG 2017-09-01 11:58:16,983: 	 Found CRAB cache file /uscms/home/ksiehl/.crab3
+ERROR 2017-09-01 11:58:16,985: 	 Error: 'crab kill --jobids' is no longer supported, please use 'crab kill' instead.
+ERROR 2017-09-01 11:58:16,985: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1707.patch1/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1707.patch1/bin/crab", line 146, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1707.patch1/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 257, in __init__
+    self.validateOptions()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1707.patch1/lib/python2.7/site-packages/CRABClient/Commands/kill.py", line 67, in validateOptions
+    raise ConfigurationException(msg)
+ConfigurationException: [91mError[0m: 'crab kill --jobids' is no longer supported, please use 'crab kill' instead.
+DEBUG 2017-09-11 15:23:48,477: 	 Executing command: 'status'
+DEBUG 2017-09-11 15:23:48,478: 	 Found CRAB cache file /uscms/home/ksiehl/.crab3
+DEBUG 2017-09-11 15:23:48,503: 	 Checking credentials
+DEBUG 2017-09-11 15:23:48,503: 	 Proxy file /tmp/x509up_u45737 not found
+DEBUG 2017-09-11 15:23:48,503: 	 Creating new proxy for 24:00 hours with VO group '' and VO role 'NULL'.
+DEBUG 2017-09-11 15:24:01,132: 	 Executing : 
+ command : voms-proxy-init -voms cms:/cms -valid 24:00 -rfc
+ output : None
+ error: None
+ retcode : 3
+DEBUG 2017-09-11 15:24:01,236: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u45737 -timeleft
+ output : 
+ error: 
+Couldn't find a valid proxy.
+
+
+ retcode : 1
+ERROR 2017-09-11 15:24:01,237: 	 Error while checking proxy timeleft for /tmp/x509up_u45737
+DEBUG 2017-09-11 15:24:01,340: 	 Executing : 
+ command : env X509_USER_PROXY=/tmp/x509up_u45737 voms-proxy-info -fqan
+ output : 
+ error: 
+Couldn't find a valid proxy.
+
+
+ retcode : 1
+ERROR 2017-09-11 15:24:01,340: 	 Problems creating proxy.
+ERROR 2017-09-11 15:24:01,340: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1707.patch1/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1707.patch1/bin/crab", line 146, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1707.patch1/lib/python2.7/site-packages/CRABClient/Commands/status.py", line 38, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1707.patch1/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 292, in __init__
+    self.proxyCreated = self.proxy.createNewVomsProxySimple(timeLeftThreshold = 720)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1707.patch1/lib/python2.7/site-packages/CRABClient/CredentialInteractions.py", line 152, in createNewVomsProxySimple
+    raise ProxyCreationException("Problems creating proxy.")
+ProxyCreationException: Problems creating proxy.
+DEBUG 2018-03-09 14:39:28,305: 	 Executing command: 'submit'
+DEBUG 2018-03-09 14:39:28,315: 	 Found CRAB cache file /uscms/home/ksiehl/.crab3
+DEBUG 2018-03-09 14:39:28,323: 	 Checking credentials
+DEBUG 2018-03-09 14:39:28,323: 	 Proxy file /tmp/x509up_u45737 not found
+DEBUG 2018-03-09 14:39:28,323: 	 Creating new proxy for 24:00 hours with VO group '' and VO role 'NULL'.
+DEBUG 2018-03-09 14:39:41,248: 	 Executing : 
+ command : voms-proxy-init -voms cms:/cms -valid 24:00 -rfc
+ output : None
+ error: None
+ retcode : 3
+DEBUG 2018-03-09 14:39:41,354: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u45737 -timeleft
+ output : 
+ error: 
+Couldn't find a valid proxy.
+
+
+ retcode : 1
+ERROR 2018-03-09 14:39:41,354: 	 Error while checking proxy timeleft for /tmp/x509up_u45737
+DEBUG 2018-03-09 14:39:41,456: 	 Executing : 
+ command : env X509_USER_PROXY=/tmp/x509up_u45737 voms-proxy-info -fqan
+ output : 
+ error: 
+Couldn't find a valid proxy.
+
+
+ retcode : 1
+ERROR 2018-03-09 14:39:41,456: 	 Problems creating proxy.
+ERROR 2018-03-09 14:39:41,457: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1803/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1803/bin/crab", line 146, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1803/lib/python2.7/site-packages/CRABClient/Commands/submit.py", line 34, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1803/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 294, in __init__
+    self.proxyCreated = self.proxy.createNewVomsProxySimple(timeLeftThreshold = 720)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1803/lib/python2.7/site-packages/CRABClient/CredentialInteractions.py", line 152, in createNewVomsProxySimple
+    raise ProxyCreationException("Problems creating proxy.")
+ProxyCreationException: Problems creating proxy.
+DEBUG 2018-03-09 15:10:09,192: 	 Executing command: 'submit'
+DEBUG 2018-03-09 15:10:09,192: 	 Found CRAB cache file /uscms/home/ksiehl/.crab3
+DEBUG 2018-03-09 15:10:09,197: 	 Checking credentials
+DEBUG 2018-03-09 15:10:09,198: 	 Found proxy file /tmp/x509up_u45737
+DEBUG 2018-03-09 15:10:09,198: 	 Getting proxy life time left
+DEBUG 2018-03-09 15:10:09,300: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u45737 -timeleft
+ output : 43193
+
+ error: 
+ retcode : 0
+DEBUG 2018-03-09 15:10:09,402: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u45737 -actimeleft
+ output : 
+ error: 
+ retcode : 1
+DEBUG 2018-03-09 15:10:09,403: 	 Proxy valid for 00:00:00 hours
+DEBUG 2018-03-09 15:10:09,403: 	 Creating new proxy for 24:00 hours with VO group '' and VO role 'NULL'.
+DEBUG 2018-03-09 15:10:17,718: 	 Executing : 
+ command : voms-proxy-init -voms cms:/cms -valid 24:00 -rfc
+ output : None
+ error: None
+ retcode : 0
+DEBUG 2018-03-09 15:10:17,822: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u45737 -timeleft
+ output : 86400
+
+ error: 
+ retcode : 0
+DEBUG 2018-03-09 15:10:17,924: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u45737 -actimeleft
+ output : 86400
+
+ error: 
+ retcode : 0
+DEBUG 2018-03-09 15:10:18,027: 	 Executing : 
+ command : env X509_USER_PROXY=/tmp/x509up_u45737 voms-proxy-info -fqan
+ output : /cms/Role=NULL/Capability=NULL
+/cms/uscms/Role=NULL/Capability=NULL
+
+ error: 
+ retcode : 0
+DEBUG 2018-03-09 15:10:18,028: 	 Proxy created.
+ERROR 2018-03-09 15:10:18,028: 	 CRAB configuration file crabConfig.py not found.
+ERROR 2018-03-09 15:10:18,028: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1803/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1803/bin/crab", line 146, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1803/lib/python2.7/site-packages/CRABClient/Commands/submit.py", line 34, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1803/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 300, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1803/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 46, in loadConfig
+    raise ConfigurationException("CRAB configuration file %s not found." % (configname))
+ConfigurationException: CRAB configuration file crabConfig.py not found.
